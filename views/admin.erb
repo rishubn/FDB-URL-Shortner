@@ -1,0 +1,31 @@
+<table>
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Site</th>
+			<th>Views</th>
+			<th>Created On</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+	<% @links.each do |link| %>
+		<tr>
+			<td><%=link[0]%></td>
+			<td><%=@adapt.find(link[0])%></td>
+			<td><%=link[1][0]%></td>
+			<td><%=Time.at(link[1][1])%></td>
+			<td>
+
+			<form action="/admin" method="post">
+			
+				<input type="hidden" value="<%=link[0]%>"name="message">
+				<input type="submit" value="Delete">
+				
+			</form>
+			</td>
+		</tr>
+		
+	<% end %>
+	</tbody>
+</table>
