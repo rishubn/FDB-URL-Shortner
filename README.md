@@ -1,3 +1,6 @@
+FDB Adapter : https://github.com/npalekar/guillotine
+
+
 # Guillotine
 
 Simple URL Shortener hobby kit.  Currently used to shorten URLs at GitHub.com, and also available as a an [installable Heroku app](https://github.com/mrtazz/katana).
